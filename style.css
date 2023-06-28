@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700&display=swap');
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+
+body {
+     font-family: 'Cairo', sans-serif;
+     background-color: #CF4F4E;
+     color: #FFFAE5;
+}
+
+/* ---------------------------main content ----------------------------- */
+
+.main-div {
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+/* ------------------------tabs -------------------------------------------- */
+
+.tabs p {
+     display: inline;
+     margin: 0 0.7vw;
+     font-size: 20px;
+     cursor: pointer;
+}
+
+.tabs p#active {
+     color: black;
+     background-color: #FFFAE5;
+     padding: 5px 20px;
+     font-weight: bold;
+     border-radius: 5px;
+}
+
+.time h1 {
+     font-size: 160px;
+}
+
+/* ------------------------------controls-------------------- */
+
+.controls button{
+     font-size: 20px;
+     font-family: inherit;
+     padding: 0 25px;
+     border-radius: 5px;
+     background-color: transparent;
+     border: #FFFAE5 solid 2px;
+     color: #FFFAE5;
+     margin: 0 0.56vw;
+     cursor: pointer;
+}
+
+.controls button#active {
+     background-color: #FFFAE5;
+     color: black;
+     font-weight: bold;
+}
+
+.controls button#active:hover {
+     transform: scale(1.3);
+     transition: 500ms;
+}
+
+.studysessions {
+     margin-top: 1.6vw;
+}
+
+.studysessions p {
+     font-size: 20px;
+}
+
+/* ------------------------------settings --------------------------------------- */
+
+.settings {
+     position: absolute;
+     top: 1.4vw;
+     right: 3.2vw;
+}
+
+.settings span {
+     font-size: 20px;
+     margin: 0 7px;
+     cursor: pointer;
+}
+
+.logo {
+     position: absolute;
+     top: -18px;
+     left: 20px;
+}
+
+.logo img {
+     width: 300px;
+}
+
+/* ---------------------- media query --------------------- */
+
+/* @media display_type and (screen_size) {
+     code
+} */
+
+@media only screen and (max-width: 1100px ) and (orientation: landscape) {
+     .logo img {
+          display: none;
+     }
+
+     .time h1 {
+          font-size: 120px;
+     }
+
+     .settings span {
+          font-size: 16px;
+          margin: 0 5px;
+     }
+
+     .tabs p {
+          margin: 0 0.7vw;
+          font-size: 16px;
+     }
+     
+}
+
+@media only screen and (max-width: 600px) {
+     .logo img {
+          display: none;
+     }
+
+     .time h1 {
+          font-size: 125px;
+     }
+}
